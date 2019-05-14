@@ -1,0 +1,48 @@
+---
+title: "Examen"
+author: "Miguel Montelongo"
+date: "14 de mayo de 2019"
+output: html_document
+---
+## Problema1 
+month_num<-c(1,2,3,4,5,6,7,8,9,10,11,12)
+month_name<-c("enero","febrero","marzo","abril", "Mayo", "junio" , "julio", "agosto" , "septiembre ", "octubre", "noviembre " , "diciembre" )
+month_name
+month_name[6:8]
+## problema2
+matrix(1:15, byrow:TRUE, nrow=15)
+## problema3
+
+vector<- c("XXL", "XXL", "XXL", "XXL","XL", "L","M","M","S","S","S")
+summary(vector)
+## problema4
+cursos<-c("fundamentos", "programacion", "admin", "innovacion", "Topicos")
+calificaciones<-c(10,9,8,10,10)
+profesores<-c("Abraham", "Alan","Pancho", "Guillermo", "Rogelio" )
+dataframe<-c(cursos,calificaciones,profesores)
+dataframe
+
+##problema5 
+print("El data cuenta con 3735 columnas, tiene algunos datos vacios, cuenta con 11 filas, vienen la mayoria de paises, y los separa por regiones, tambien se observa su codigo que es como su abreviatura del nombre y al grupo en el que pertenecen y sus habitantes.")
+##problema6 
+install.packages("usingR")
+library(dplyr)
+
+itu<-select(ITU_WB,Economy="Mexico") %>% unlist
+select("Internet Value"")
+##problema7
+itu_by_year<-select(ITU_WB,"Year","Income Group")
+na.omit(itu_by_year)
+
+##problema8
+
+dataframe<-itu_by_year
+
+##problema9
+
+itu_latin<-select(ITU_WB, Region="Latin America Y Caribbean") %>% unlist
+
+
+##problema10 
+na.omit(ITU_WB)
+hist."GDP(US$)"(ITU_WB)
